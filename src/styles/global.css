@@ -1,3 +1,36 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --bg-js: #E7DE79;
+    --pic-border: #00FF00;
+}
+
 html * {
     box-sizing: border-box;
+    font: 400 14px/18px 'Merriweather Sans', sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+*::selection {
+    background-color: var(--bg-techs);
+    color: var(--body-bg-color);
+}
+
+body {
+    width: 100vw;
+
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    background-color: var(--body-bg-color);
+}
+
+aside > section:not(:first-child) {
+    margin-top: 30px;
 }
