@@ -6,7 +6,7 @@ import { Posts } from '../../components/Posts'
 export function Home() {
     return (
         <aside id="activity">
-            <Projects />
+            <Projects reposToDisplay={2}/>
             <Posts />
         </aside>
     )

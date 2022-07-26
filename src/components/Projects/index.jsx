@@ -5,7 +5,7 @@ import { Repos } from "./styles"
 import { ActivityHeader } from "../ActivityHeader";
 import { ProjectCard } from "../ProjectCard";
 
-export function Projects() {
+export function Projects({reposToDisplay}) {
 
     const [repos, setRepos] = useState([])
 
@@ -22,7 +22,7 @@ export function Projects() {
                 return repo2CreationData.getTime() - repo1CreationData.getTime()
             })
 
-            setRepos([reposData[0], reposData[1]])
+            setRepos(reposData.slice(0, reposToDisplay))
         }
 
         fetchRepos().catch(err => console.error(err))
