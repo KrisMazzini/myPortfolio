@@ -7,7 +7,7 @@ export function Home() {
     return (
         <aside id="activity">
             <Projects reposToDisplay={2}/>
-            <Posts />
+            <Posts postsToDisplay={5}/>
         </aside>
     )
 }
