@@ -7,18 +7,26 @@ import githubColors from '../../utils/githubColors.json'
 
 export function ProjectCard({githubRepo}) {
 
-    const languageColor = githubColors[githubRepo?.language] || "#FFFFFF";
+    const {
+        name,
+        description,
+        language,
+        stargazers_count,
+        forks_count,
+    } = githubRepo
+
+    const languageColor = githubColors[language] || "#FFFFFF";
 
     const stars = {
         icon: star,
         name: "stars",
-        value: githubRepo?.stargazers_count || 0,
+        value: stargazers_count || 0,
     }
 
     const forks = {
         icon: branches,
         name: "forks",
-        value: githubRepo?.forks_count || 0,
+        value: forks_count || 0,
     }
 
     const insights = [stars, forks]
@@ -27,10 +35,10 @@ export function ProjectCard({githubRepo}) {
         <Article>
             <Header>
                 <img src={folder} alt="folder" />
-                <h4>{githubRepo?.name}</h4>
+                <h4>{name}</h4>
             </Header>
 
-            <p>{githubRepo?.description}</p>
+            <p>{description}</p>
 
             <Footer>
                 <Insights>
@@ -43,7 +51,7 @@ export function ProjectCard({githubRepo}) {
                         ))
                     }
                 </Insights>
-                <Language color={languageColor}>{githubRepo?.language}</Language>
+                <Language color={languageColor}>{language}</Language>
             </Footer>
         </Article>
     )
