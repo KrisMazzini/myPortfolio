@@ -1,8 +1,10 @@
-import { Article, Header, Footer, Insights, Insight, Language } from './styles.jsx'
+import { Article, Header, Links, Footer, Insights, Insight, Language } from './styles.jsx'
 
 import star from '/star.svg'
 import branches from '/git-branch.svg'
 import folder from '/folder.svg'
+import github from '/github.svg'
+import globe from '/globe.svg'
 import githubColors from '../../utils/githubColors.json'
 
 export function ProjectCard({githubRepo}) {
@@ -11,6 +13,8 @@ export function ProjectCard({githubRepo}) {
         name,
         description,
         language,
+        html_url,
+        homepage,
         stargazers_count,
         forks_count,
     } = githubRepo
@@ -36,6 +40,14 @@ export function ProjectCard({githubRepo}) {
             <Header>
                 <img src={folder} alt="folder" />
                 <h4>{name}</h4>
+                <Links>
+                    {
+                        homepage ?
+                        <a href={homepage} target="_blank"><img src={globe} alt="Homepage" /></a> :
+                        ""
+                    }
+                    <a href={html_url} target="_blank"><img src={github} alt="GitHub" /></a>
+                </Links>
             </Header>
 
             <p>{description}</p>

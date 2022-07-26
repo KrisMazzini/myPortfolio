@@ -33,6 +33,14 @@ export const Header = styled.header`
     gap: 16px;
 `
 
+export const Links = styled.nav`
+    margin-left: auto;
+    
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+`
+
 export const Footer = styled.footer`
     display: flex;
     justify-content: space-between;
