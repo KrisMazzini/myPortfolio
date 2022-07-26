@@ -14,7 +14,11 @@ html * {
     text-decoration: none;
 }
 
-*::selection {
+img::selection {
+    background-color: #ffffff00;
+}
+
+*:not(img)::selection {
     background-color: var(--bg-techs);
     color: var(--body-bg-color);
 }
