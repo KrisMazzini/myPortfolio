@@ -36,3 +36,9 @@ export const socialMedias = [
         name: "kristophermazzini.sc@gmail.com",
     },
 ]
+
+export const skills = [
+    "HTML", "CSS", "JavaScript", "Git", "GitHub",
+    "MySQL", "Elasticsearch", "React.js", "Node.js",
+    "Scrum",
+]

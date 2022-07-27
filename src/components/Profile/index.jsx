@@ -1,7 +1,7 @@
-import { Main, SocialMedias } from "./styles"
+import { Main, SocialMedias, Skills } from "./styles"
 import { ProfileCard } from "../ProfileCard"
 
-import { socialMedias } from "../../constants/profile"
+import { socialMedias, skills } from "../../constants/profile"
 
 export function Profile() {
     return (
@@ -20,6 +20,14 @@ export function Profile() {
                         ))
                     }
                 </SocialMedias>
+            </section>
+            <section>
+                <h3>Skills</h3>
+                <Skills>
+                    {
+                        skills.map(skill => <li>{skill}</li>)
+                    }
+                </Skills>
             </section>
         </Main>
     )

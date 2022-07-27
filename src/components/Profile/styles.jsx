@@ -13,6 +13,10 @@ export const Main = styled.main`
         
         background-color: var(--bg-cards);
     }
+
+    h3 {
+        margin: 0 0 20px -10px;
+    }
 `
 
 export const SocialMedias = styled.ul`
@@ -28,5 +32,34 @@ export const SocialMedias = styled.ul`
         gap: 20px;
 
         line-height: 16px;
+    }
+`
+
+export const Skills = styled.ul`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    li {
+        width: 86px;
+        height: 24px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 30px;
+
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 13px;
+
+        color: var(--body-bg-color);
+        background-color: var(--bg-techs);
+    }
+
+    li::selection {
+        color: var(--bg-techs);
+        background-color: var(--body-bg-color);
     }
 `
