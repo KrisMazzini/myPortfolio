@@ -17,6 +17,11 @@ export const Main = styled.main`
     h3 {
         margin: 0 0 20px -10px;
     }
+
+    h4 {
+        font-weight: 700;
+        display: inline;
+    }
 `
 
 export const SocialMedias = styled.ul`
@@ -61,5 +66,24 @@ export const Skills = styled.ul`
     li::selection {
         color: var(--bg-techs);
         background-color: var(--body-bg-color);
+    }
+`
+
+export const Background = styled.ul`
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    list-style-type: disc;
+
+    margin-left: 30px;
+
+    p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    p:first-of-type {
+        font-weight: 300;
     }
 `

@@ -42,3 +42,34 @@ export const skills = [
     "MySQL", "Elasticsearch", "React.js", "Node.js",
     "Scrum",
 ]
+
+export const professionalBackground = [
+    {
+        role: "Software Engineer",
+        period: "July 2022 - Currently",
+        company: "LEVTY"
+    },
+    {
+        role: "Software Engineer Intern",
+        period: "September 2021 - July 2022",
+        company: "LEVTY"
+    },
+    {
+        role: "Customer Experience Analyst Intern",
+        period: "May 2021 - September 2021",
+        company: "99 Tecnologia / Didi Chuxing"
+    },
+]
+
+export const education = [
+    {
+        description: "Bachelor in Electrical Engineering",
+        period: "2016 - Currently",
+        institution: "Federal University Of Juiz de Fora"
+    },
+    {
+        description: "Exchange Program - ERASMUS",
+        period: "2019 - 2020",
+        institution: "Politechnika Wroclawska"
+    },
+]
