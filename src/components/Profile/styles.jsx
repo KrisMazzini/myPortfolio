@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Main = styled.main`
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
 
     > section {
