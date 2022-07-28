@@ -9,8 +9,8 @@ export function Home() {
         <Container>
             <Profile />
             <aside id="activity">
-                <Projects reposToDisplay={2}/>
-                <Posts postsToDisplay={5}/>
+                <Projects reposToDisplay={5}/>
+                <Posts postsToDisplay={3}/>
             </aside>
         </Container>
     )

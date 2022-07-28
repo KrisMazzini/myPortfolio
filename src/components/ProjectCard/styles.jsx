@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Article = styled.article`
     height: 186px;
-    width: 100%;
+    min-width: 300px;
+
+    flex: 1 0 40%;
 
     display: flex;
     flex-direction: column;
