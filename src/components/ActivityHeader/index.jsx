@@ -1,12 +1,19 @@
+import { Link } from "react-router-dom";
 import { Header } from "./styles.jsx";
 
-export function ActivityHeader({text, pageLinked}) {
+export function ActivityHeader({text, links}) {
     return (
         <Header>
             <h3>{text}</h3>
-            <nav>
-                <a href={pageLinked}>See all</a>
-            </nav>
+            {
+                links?.length ? (
+                    <nav>
+                        {
+                            links.map(link => <Link to={link.path}>{link.text}</Link>)
+                        }
+                    </nav>
+                ) : <></>
+            }
         </Header>
     )
 }

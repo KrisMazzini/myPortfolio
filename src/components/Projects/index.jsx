@@ -5,7 +5,7 @@ import { Repos } from "./styles"
 import { ActivityHeader } from "../ActivityHeader";
 import { ProjectCard } from "../ProjectCard";
 
-export function Projects({reposToDisplay}) {
+export function Projects({reposToDisplay, links}) {
 
     const [repos, setRepos] = useState([])
 
@@ -30,7 +30,7 @@ export function Projects({reposToDisplay}) {
 
     return (
         <section id="projects">
-            <ActivityHeader text="My Projects" />
+            <ActivityHeader text="My Projects" links={links}/>
             <Repos>
                 {
                     repos.map(repo => <ProjectCard key={repo.name} githubRepo={repo} />)
