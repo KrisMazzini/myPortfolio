@@ -8,6 +8,8 @@ export const Article = styled.article`
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
+
+    position: relative;
     
     padding: 30px;
     border-radius: 20px;
@@ -26,6 +28,12 @@ export const Author = styled.section`
         height: 128px;
 
         border-radius: 100%;
+    }
+
+    > p {
+        position: absolute;
+        top: 30px;
+        right: 30px;
     }
 `
 

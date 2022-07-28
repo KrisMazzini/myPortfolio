@@ -1,3 +1,4 @@
+import { useState, useRef } from "react"
 import moment from "moment"
 
 import { Article, Author, Summary, Hashtags } from "./styles"
@@ -29,10 +30,24 @@ export function PostCard({event}) {
     const defaultHashtags = ["NewEvent"]
     const hashtags = payload?.commits?.map(commit => getHashtag(commit.message))
 
+    const handleResize = () => setPostWidth(ref.current.clientWidth)
+
+    const [postWidth, setPostWidth] = useState(0)
+
+    const ref = useRef()
+
+    window.addEventListener('resize', handleResize)
+
     return (
-        <Article>
+        <Article ref={ref} width={postWidth}>
             <Author>
-                <img src={profilePicture} alt="Profile Picture" />
+                {
+                    postWidth > 650 ? (
+                        <img src={profilePicture} alt="Profile Picture" />
+                    ) : (
+                        <p>{user}</p>
+                    )
+                }
             </Author>
             <Summary>
                 <header>
