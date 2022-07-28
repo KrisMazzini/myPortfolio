@@ -3,7 +3,7 @@ import { ProfileCard } from "../ProfileCard"
 
 import { socialMedias, skills, professionalBackground, education } from "../../constants/profile"
 
-export function Profile() {
+export function Profile() {    
     return (
         <Main>
             <ProfileCard />
@@ -25,7 +25,9 @@ export function Profile() {
                 <h3>Skills</h3>
                 <Skills>
                     {
-                        skills.map(skill => <li>{skill}</li>)
+                        skills.map(skill => (
+                            <li>{skill.name}</li>
+                        ))
                     }
                 </Skills>
             </section>

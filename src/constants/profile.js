@@ -38,9 +38,47 @@ export const socialMedias = [
 ]
 
 export const skills = [
-    "HTML", "CSS", "JavaScript", "Git", "GitHub",
-    "MySQL", "Elasticsearch", "React.js", "Node.js",
-    "Scrum",
+    {
+        name: "HTML", 
+        since: "2021-06-01",
+    },
+    {
+        name: "CSS", 
+        since: "2021-06-01",
+    },
+    {
+        name: "JavaScript", 
+        since: "2021-06-01",
+    },
+    {
+        name: "Git", 
+        since: "2021-11-01",
+    },
+    {
+        name: "GitHub",
+        since: "2021-11-01",
+    },
+    ,
+    {
+        name: "MySQL", 
+        since: "2021-07-01",
+    },
+    {
+        name: "Elasticsearch", 
+        since: "2021-09-01",
+    },
+    {
+        name: "React.js", 
+        since: "2022-06-01",
+    },
+    {
+        name: "Node.js",
+        since: "2022-06-01",
+    },
+    {
+        name: "Scrum",
+        since: "2020-06-01",
+    },
 ]
 
 export const professionalBackground = [
