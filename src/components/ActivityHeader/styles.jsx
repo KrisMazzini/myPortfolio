@@ -17,4 +17,10 @@ export const Header = styled.header`
         font-size: 20px;
         line-height: 25px;
     }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
 `
