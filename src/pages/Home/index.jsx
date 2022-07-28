@@ -10,12 +10,17 @@ export function Home() {
         text: "See all"
     }]
 
+    const postsLinks = [{
+        path: "/posts",
+        text: "See all"
+    }]
+
     return (
         <Container>
             <Profile />
             <aside id="activity">
                 <Projects reposToDisplay={5} links={projectsLinks}/>
-                <Posts postsToDisplay={3}/>
+                <Posts postsToDisplay={3} links={postsLinks}/>
             </aside>
         </Container>
     )

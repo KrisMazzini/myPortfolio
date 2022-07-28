@@ -5,7 +5,7 @@ import { PostsContainer } from "./styles.jsx";
 import { ActivityHeader } from "../ActivityHeader";
 import { PostCard } from "../PostCard";
 
-export function Posts({postsToDisplay}) {
+export function Posts({postsToDisplay, links}) {
 
     const [events, setEvents] = useState([])
 
@@ -30,7 +30,7 @@ export function Posts({postsToDisplay}) {
 
     return (
         <section id="recent-posts">
-            <ActivityHeader text="Recent Events" />
+            <ActivityHeader text="Recent Events" links={links} />
             <PostsContainer>
                 {
                     events.map(event => (
