@@ -13,15 +13,17 @@ export const Header = styled.header`
     border-radius: 20px;
     
     background-color: var(--bg-cards);
-
+    
     img:first-child {
-        width: 128px;
-        height: 128px;
-
-        margin-bottom: 10px;
+        width: 131px;
+        height: 131px;
         
-        border: 2px solid var(--pic-border);
+        margin-bottom: 10px;
+
+        padding: 3px;
         border-radius: 100%;
+        
+        background: linear-gradient(90deg, var(--green), var(--light-blue), var(--pink));
     }
 
     img:last-child {
