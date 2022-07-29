@@ -13,16 +13,20 @@ export const Header = styled.header`
     background-color: var(--section);
     
     * {
-        color: var(--dark-blue);
+        color: var(--text-color);
     }
 
     h3 {
         font: 700 20px/25px 'Syncopate', sans-serif;
     }
 
-    nav {
+    ul {
         display: flex;
         align-items: center;
         gap: 15px;
+    }
+    
+    a {
+        font: 700 18px 'Darker Grotesque', sans-serif;
     }
 `

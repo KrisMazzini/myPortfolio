@@ -8,9 +8,11 @@ export function ActivityHeader({text, links}) {
             {
                 links?.length ? (
                     <nav>
-                        {
-                            links.map(link => <Link to={link.path}>{link.text}</Link>)
-                        }
+                        <ul>
+                            {
+                                links.map(link => <li><Link to={link.path}>{link.text}</Link></li>)
+                            }
+                        </ul>
                     </nav>
                 ) : <></>
             }
