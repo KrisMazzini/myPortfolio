@@ -13,20 +13,47 @@ export const Header = styled.header`
     border-radius: 20px;
     
     background-color: var(--bg-cards);
-    
-    img:first-child {
-        width: 131px;
-        height: 131px;
-        
-        margin-bottom: 10px;
 
-        padding: 3px;
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg)
+        }
+
+        to {
+            transform: rotate(360deg)
+        }
+    }
+    
+    > div {
+        width: 140px;
+        height: 140px;
         border-radius: 100%;
+        position: relative;
+    }
+    
+    div div {
+        width: 136px;
+        height: 136px;
         
+        border-radius: 100%;
+        background-color: var(--section);
         background: linear-gradient(90deg, var(--green), var(--light-blue), var(--pink));
+
+        animation: rotate 4s linear infinite;
     }
 
-    img:last-child {
+    div img {
+        width: 128px;
+        height: 128px;
+        
+        position: absolute;
+        top: 4px;
+        left: 4px;
+
+        border-radius: 100%;
+    }
+
+    > img {
         width: 280px;
     }
 `

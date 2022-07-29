@@ -5,7 +5,10 @@ import blackLogo from "/black-logo.png"
 export function ProfileCard() {
     return (
         <Header>
-            <img src={profilePicture} alt="Profile Picture" />
+            <div>
+                <div></div>
+                <img src={profilePicture} alt="Profile Picture" />
+            </div>
             <img src={blackLogo} alt="Black Logo" />
         </Header>
     )
