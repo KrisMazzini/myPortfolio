@@ -1,10 +1,15 @@
 :root {
-    --body-bg-color: #22212C;
-    --text-color: #837E9F;
-    --bg-cards: #302F3D;
-    --bg-techs: #CB92B1;
-    --bg-js: #E7DE79;
-    --pic-border: #00FF00;
+    --body-bg: linear-gradient(45deg, #05DBF2, #00163D);
+    --section: #02FE85;
+    --text-color: #00163D;
+    --bg-cards: #FFFFFF;
+    --bg-techs: #FA26AD;
+    --pic-border: #02FE85;
+
+    --pink: #FA26AD;
+    --light-blue: #05DBF2;
+    --dark-blue: #00163D;
+    --green: #02FE85;
 }
 
 html * {
@@ -19,8 +24,7 @@ img::selection {
 }
 
 *:not(img)::selection {
-    background-color: var(--bg-techs);
-    color: var(--body-bg-color);
+    background-color: var(--light-blue);
 }
 
 body {
@@ -32,7 +36,7 @@ body {
     flex-direction: column;
     gap: 30px;
     
-    background-color: var(--body-bg-color);
+    background: var(--body-bg);
 }
 
 aside > section:not(:first-child) {

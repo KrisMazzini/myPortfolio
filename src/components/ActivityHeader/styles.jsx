@@ -10,7 +10,11 @@ export const Header = styled.header`
     justify-content: space-between;
     align-items: center;
 
-    background-color: var(--bg-cards);
+    background-color: var(--section);
+    
+    * {
+        color: var(--dark-blue);
+    }
 
     h3 {
         font-weight: 700;

@@ -59,13 +59,12 @@ export const Skills = styled.ul`
         font-size: 10px;
         line-height: 13px;
 
-        color: var(--body-bg-color);
+        color: var(--bg-cards);
         background-color: var(--bg-techs);
     }
 
     li::selection {
-        color: var(--bg-techs);
-        background-color: var(--body-bg-color);
+        background-color: var(--text-color);
     }
 `
 

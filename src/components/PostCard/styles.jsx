@@ -60,8 +60,6 @@ export const Summary = styled.section`
         width: 100%;
         font-size: 16px;
     }
-
-    /* background-color: blue; */
 `
 
 export const Hashtags = styled.ul`
