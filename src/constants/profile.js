@@ -51,6 +51,10 @@ export const skills = [
         since: "2021-06-01",
     },
     {
+        name: "TypeScript", 
+        since: "2022-06-01",
+    },
+    {
         name: "Git", 
         since: "2021-11-01",
     },
