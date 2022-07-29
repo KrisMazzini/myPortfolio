@@ -17,7 +17,9 @@ export const Article = styled.article`
     background-color: var(--bg-cards);
 
     h4 {
-        font: 700 12px/13px 'Syncopate', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25px;
     }
 
     > p {

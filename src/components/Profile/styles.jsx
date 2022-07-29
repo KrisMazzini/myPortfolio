@@ -16,7 +16,7 @@ export const Main = styled.main`
 
     h3 {
         margin: 0 0 20px -10px;
-        font: 400 16px/20px 'Syncopate', sans-serif;
+        font: 700 16px/20px 'Syncopate', sans-serif;
     }
 
     h4 {
