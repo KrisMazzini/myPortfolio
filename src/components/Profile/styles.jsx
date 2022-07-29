@@ -43,6 +43,7 @@ export const SocialMedias = styled.ul`
 
 export const Skills = styled.ul`
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 
