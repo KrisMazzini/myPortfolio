@@ -51,14 +51,16 @@ export const Summary = styled.section`
     
     h4 {
         height: 31px;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 23px;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 25px;
     }
     
     > p {
         width: 100%;
-        font-size: 16px;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 24px;
     }
 `
 

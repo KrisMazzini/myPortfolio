@@ -14,7 +14,7 @@
 
 html * {
     box-sizing: border-box;
-    font: 400 14px/18px 'Merriweather Sans', sans-serif;
+    font: 500 18px/22px 'Darker Grotesque', sans-serif;
     color: var(--text-color);
     text-decoration: none;
 }

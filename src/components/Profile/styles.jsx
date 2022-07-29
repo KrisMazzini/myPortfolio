@@ -16,6 +16,7 @@ export const Main = styled.main`
 
     h3 {
         margin: 0 0 20px -10px;
+        font: 400 16px/20px 'Syncopate', sans-serif;
     }
 
     h4 {
@@ -56,8 +57,8 @@ export const Skills = styled.ul`
         border-radius: 30px;
 
         font-weight: 700;
-        font-size: 10px;
-        line-height: 13px;
+        font-size: 14px;
+        line-height: 16px;
 
         color: var(--bg-cards);
         background-color: var(--bg-techs);
@@ -78,11 +79,12 @@ export const Background = styled.ul`
     margin-left: 30px;
 
     p {
-        font-size: 12px;
-        line-height: 15px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
     }
 
     p:first-of-type {
-        font-weight: 300;
+        font-weight: 400;
     }
 `

@@ -25,10 +25,13 @@ export const Header = styled.header`
     }
 
     h1 {
-        margin-bottom: 10px;
+        margin-bottom: 7px;
 
-        font-weight: 700;
-        font-size: 23px;
-        line-height: 29px;
+        font: 700 18px/24px 'Syncopate', sans-serif;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: 4px;
     }
 `

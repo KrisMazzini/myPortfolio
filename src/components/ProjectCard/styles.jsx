@@ -17,15 +17,13 @@ export const Article = styled.article`
     background-color: var(--bg-cards);
 
     h4 {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
+        font: 700 12px/13px 'Syncopate', sans-serif;
     }
 
     > p {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
     }
 `
 

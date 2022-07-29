@@ -17,9 +17,7 @@ export const Header = styled.header`
     }
 
     h3 {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 25px;
+        font: 700 20px/25px 'Syncopate', sans-serif;
     }
 
     nav {
