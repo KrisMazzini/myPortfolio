@@ -1,3 +1,4 @@
+import { ProfileCard } from "../../components/ProfileCard"
 import { Posts } from "../../components/Posts"
 
 export function AllPosts() {
@@ -12,6 +13,9 @@ export function AllPosts() {
     ]
 
     return (
-        <Posts links={links}/>
+        <div style={{display: "flex", flexDirection: "column", gap: "30px"}}>
+            <ProfileCard />
+            <Posts links={links}/>
+        </div>
     )
 }

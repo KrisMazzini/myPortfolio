@@ -1,3 +1,4 @@
+import { ProfileCard } from "../../components/ProfileCard";
 import { Projects } from "../../components/Projects";
 
 export function AllProjects() {
@@ -12,6 +13,9 @@ export function AllProjects() {
     ]
 
     return (
-        <Projects links={links}/>
+        <div style={{display: "flex", flexDirection: "column", gap: "30px"}}>
+            <ProfileCard />
+            <Projects links={links}/>
+        </div>
     )
 }
