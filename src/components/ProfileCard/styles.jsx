@@ -25,8 +25,8 @@ export const Header = styled.header`
     }
     
     > div {
-        width: 140px;
-        height: 140px;
+        width: 136px;
+        height: 136px;
         border-radius: 100%;
         position: relative;
     }
