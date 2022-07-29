@@ -1,12 +1,12 @@
 import { Header } from "./styles";
 import profilePicture from "/kristopher.jpg"
+import blackLogo from "/black-logo.png"
 
 export function ProfileCard() {
     return (
         <Header>
             <img src={profilePicture} alt="Profile Picture" />
-            <h1>Kristopher Mazzini</h1>
-            <h2>Front-End Developer</h2>
+            <img src={blackLogo} alt="Black Logo" />
         </Header>
     )
 }

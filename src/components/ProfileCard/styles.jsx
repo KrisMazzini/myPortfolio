@@ -14,24 +14,17 @@ export const Header = styled.header`
     
     background-color: var(--bg-cards);
 
-    img {
+    img:first-child {
         width: 128px;
         height: 128px;
 
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         
         border: 2px solid var(--pic-border);
         border-radius: 100%;
     }
 
-    h1 {
-        margin-bottom: 7px;
-
-        font: 700 18px/24px 'Syncopate', sans-serif;
-    }
-
-    h2 {
-        text-transform: uppercase;
-        letter-spacing: 4px;
+    img:last-child {
+        width: 280px;
     }
 `
