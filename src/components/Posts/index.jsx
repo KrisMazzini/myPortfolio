@@ -30,7 +30,7 @@ export function Posts({postsToDisplay, links}) {
 
     return (
         <section id="recent-posts">
-            <ActivityHeader text="Events" links={links} />
+            <ActivityHeader text="Posts" links={links} />
             <PostsContainer>
                 {
                     events.map(event => (
