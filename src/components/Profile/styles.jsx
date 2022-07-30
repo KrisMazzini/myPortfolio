@@ -58,8 +58,6 @@ export const Skill = styled.li`
     justify-content: center;
     align-items: center;
 
-    cursor: pointer;
-
     border-radius: 30px;
 
     font-weight: 700;
@@ -69,7 +67,7 @@ export const Skill = styled.li`
     color: var(--bg-cards);
     background-color: var(--bg-techs);
 
-    :active {
+    :hover {
         ::before {
             content: "${props => props.experienceTime}";
             
