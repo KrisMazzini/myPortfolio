@@ -1,4 +1,4 @@
-import { useState, useRef } from "react"
+import { useState, useEffect, useRef } from "react"
 import moment from "moment"
 
 import { Article, Author, Summary, Hashtags } from "./styles"
@@ -37,6 +37,8 @@ export function PostCard({event}) {
     const ref = useRef()
 
     window.addEventListener('resize', handleResize)
+
+    useEffect(() => ref?.current ? handleResize() : {}, [])
 
     return (
         <Article ref={ref} width={postWidth}>
