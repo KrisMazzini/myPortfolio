@@ -5,6 +5,7 @@ import { PostsContainer } from "./styles.jsx";
 import { ActivityHeader } from "../ActivityHeader";
 import { PostCard } from "../PostCard";
 
+import { eventsURL } from "../../services/githubAPI";
 import { Links } from "../ActivityHeader"
 
 type Props = {
@@ -22,7 +23,6 @@ export function Posts(props: Props) {
 
     useEffect(() => {
         async function fetchRepos() {
-            const eventsURL = "https://api.github.com/users/KrisMazzini/events"
             const response = await axios.get(eventsURL)
             const eventsData = response.data as Event[]
 

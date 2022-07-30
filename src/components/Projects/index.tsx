@@ -4,6 +4,7 @@ import axios from "axios";
 import { Repos } from "./styles"
 import { ActivityHeader, Links } from "../ActivityHeader";
 import { ProjectCard, GithubRepo } from "../ProjectCard";
+import { reposURL } from "../../services/githubAPI"
 
 type Props = {
     reposToDisplay?: number;
@@ -18,7 +19,6 @@ export function Projects(props: Props) {
 
     useEffect(() => {
         async function fetchRepos() {
-            const reposURL = "https://api.github.com/users/KrisMazzini/repos"
             const response = await axios.get(reposURL)
             const reposData = response.data as GithubRepo[]
 
