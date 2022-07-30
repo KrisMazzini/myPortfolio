@@ -23,13 +23,15 @@ type Props = {
     githubRepo: GithubRepo;
 }
 
+type LanguageKey = keyof typeof githubColors
+
 export function ProjectCard(props: Props) {
 
     const findGithubColor = (language:string):string => {
-        const githubLanguages:string[] = Object.keys(githubColors)
-        const matchLanguage:string|undefined = githubLanguages.find(lang => lang === language)
+        const githubLanguage = language as LanguageKey
+        const matchColor = githubColors[githubLanguage]
 
-        return matchLanguage || "#FFFFFF"
+        return matchColor || "#FFFFFF"
     }
     
     const { githubRepo } = props
