@@ -1,7 +1,20 @@
 import { Link } from "react-router-dom";
 import { Header } from "./styles.jsx";
 
-export function ActivityHeader({text, links}) {
+type Links = {
+    path: string;
+    text: string;
+}
+
+type Props = {
+    text: string;
+    links: Links[];
+}
+
+export function ActivityHeader(props: Props) {
+    
+    const { text, links } = props
+
     return (
         <Header>
             <h3>{text}</h3>
