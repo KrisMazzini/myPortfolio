@@ -23,6 +23,46 @@ export const Header = styled.header`
             transform: rotate(360deg)
         }
     }
+
+    -webkit-@keyframes rotate {
+        from {
+            transform: rotate(0deg)
+        }
+
+        to {
+            transform: rotate(360deg)
+        }
+    }
+
+    -moz-@keyframes rotate {
+        from {
+            transform: rotate(0deg)
+        }
+
+        to {
+            transform: rotate(360deg)
+        }
+    }
+
+    -o-@keyframes rotate {
+        from {
+            transform: rotate(0deg)
+        }
+
+        to {
+            transform: rotate(360deg)
+        }
+    }
+
+    -ms-@keyframes rotate {
+        from {
+            transform: rotate(0deg)
+        }
+
+        to {
+            transform: rotate(360deg)
+        }
+    }
     
     > div {
         width: 136px;
