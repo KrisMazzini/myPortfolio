@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Header } from "./styles.jsx";
 
-type Links = {
+export type Links = {
     path: string;
     text: string;
 }
