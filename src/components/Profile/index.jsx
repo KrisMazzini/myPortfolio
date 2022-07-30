@@ -1,9 +1,24 @@
-import { Main, SocialMedias, Skills, Background } from "./styles"
+import moment from "moment"
+
+import { Main, SocialMedias, Skills, Skill, Background } from "./styles"
 import { ProfileCard } from "../ProfileCard"
 
 import { socialMedias, skills, professionalBackground, education } from "../../constants/profile"
 
-export function Profile() {    
+export function Profile() {
+    function getExperienceTime(since) {
+        const startDate = moment(since, "YYYY-MM-DD")
+        const now = moment()
+
+        const timeDiffInYears = Math.abs(startDate.diff(now, 'years'))
+        const timeDiffInMonths = Math.abs(startDate.diff(now, 'months'))
+
+        if (timeDiffInYears) return `${timeDiffInYears} years`
+        if (timeDiffInMonths) return `${timeDiffInMonths} months`
+
+        return "No xp."
+    }
+
     return (
         <Main>
             <ProfileCard />
@@ -26,7 +41,7 @@ export function Profile() {
                 <Skills>
                     {
                         skills.map(skill => (
-                            <li>{skill.name}</li>
+                            <Skill experienceTime={getExperienceTime(skill.since)}>{skill.name}</Skill>
                         ))
                     }
                 </Skills>
