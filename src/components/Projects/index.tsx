@@ -6,7 +6,7 @@ import { ActivityHeader, Links } from "../ActivityHeader";
 import { ProjectCard, GithubRepo } from "../ProjectCard";
 
 type Props = {
-    reposToDisplay: number;
+    reposToDisplay?: number;
     links: Links[];
 }
 

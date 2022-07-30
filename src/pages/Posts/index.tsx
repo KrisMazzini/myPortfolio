@@ -1,8 +1,10 @@
 import { ProfileCard } from "../../components/ProfileCard"
 import { Posts } from "../../components/Posts"
 
+import { Links } from '../../components/ActivityHeader'
+
 export function AllPosts() {
-    const links = [
+    const links:Links[] = [
         {
             path: "/projects",
             text: "Projects"

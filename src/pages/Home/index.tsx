@@ -4,13 +4,15 @@ import { Profile } from '../../components/Profile'
 import { Projects } from '../../components/Projects'
 import { Posts } from '../../components/Posts'
 
+import { Links } from '../../components/ActivityHeader'
+
 export function Home() {
-    const projectsLinks = [{
+    const projectsLinks:Links[] = [{
         path: "/projects",
         text: "See all"
     }]
 
-    const postsLinks = [{
+    const postsLinks:Links[] = [{
         path: "/posts",
         text: "See all"
     }]

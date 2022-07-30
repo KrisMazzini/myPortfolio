@@ -8,7 +8,7 @@ import { PostCard } from "../PostCard";
 import { Links } from "../ActivityHeader"
 
 type Props = {
-    postsToDisplay: number;
+    postsToDisplay?: number;
     links: Links[];
 }
 
