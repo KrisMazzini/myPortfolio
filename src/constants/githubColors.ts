@@ -1,4 +1,4 @@
-{
+export const githubColors = {
     "ABAP": "#E8274B", 
     "ActionScript": "#882B0F", 
     "Ada": "#02f88c", 

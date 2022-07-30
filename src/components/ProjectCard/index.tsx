@@ -5,9 +5,33 @@ import branches from '/git-branch.svg'
 import folder from '/folder.svg'
 import github from '/github.svg'
 import globe from '/globe.svg'
-import githubColors from '../../utils/githubColors.json'
 
-export function ProjectCard({githubRepo}) {
+import { githubColors } from "../../constants/githubColors"
+
+type GithubRepo = {
+    name: string;
+    description: string;
+    language: string;
+    html_url: string;
+    homepage: string;
+    stargazers_count: number;
+    forks_count: number;
+}
+
+type Props = {
+    githubRepo: GithubRepo
+}
+
+export function ProjectCard(props: Props) {
+
+    const findGithubColor = (language:string):string => {
+        const githubLanguages:string[] = Object.keys(githubColors)
+        const matchLanguage:string|undefined = githubLanguages.find(lang => lang === language)
+
+        return matchLanguage || "#FFFFFF"
+    }
+    
+    const { githubRepo } = props
 
     const {
         name,
@@ -19,7 +43,7 @@ export function ProjectCard({githubRepo}) {
         forks_count,
     } = githubRepo
 
-    const languageColor = githubColors[language] || "#FFFFFF";
+    const languageColor = findGithubColor(language);
 
     const stars = {
         icon: star,
