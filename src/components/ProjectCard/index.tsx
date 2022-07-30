@@ -8,7 +8,7 @@ import globe from '/globe.svg'
 
 import { githubColors } from "../../constants/githubColors"
 
-type GithubRepo = {
+export type GithubRepo = {
     name: string;
     description: string;
     language: string;
@@ -16,10 +16,11 @@ type GithubRepo = {
     homepage: string;
     stargazers_count: number;
     forks_count: number;
+    created_at: string;
 }
 
 type Props = {
-    githubRepo: GithubRepo
+    githubRepo: GithubRepo;
 }
 
 export function ProjectCard(props: Props) {

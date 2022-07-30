@@ -2,18 +2,25 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 import { Repos } from "./styles"
-import { ActivityHeader } from "../ActivityHeader";
-import { ProjectCard } from "../ProjectCard";
+import { ActivityHeader, Links } from "../ActivityHeader";
+import { ProjectCard, GithubRepo } from "../ProjectCard";
 
-export function Projects({reposToDisplay, links}) {
+type Props = {
+    reposToDisplay: number;
+    links: Links[];
+}
 
-    const [repos, setRepos] = useState([])
+export function Projects(props: Props) {
+
+    const { reposToDisplay, links } = props
+
+    const [repos, setRepos] = useState<GithubRepo[]>([])
 
     useEffect(() => {
         async function fetchRepos() {
             const reposURL = "https://api.github.com/users/KrisMazzini/repos"
             const response = await axios.get(reposURL)
-            const reposData = response.data
+            const reposData = response.data as GithubRepo[]
 
             reposData.sort((repo1, repo2) => {
                 const repo1CreationData = new Date(repo1.created_at)
