@@ -3,7 +3,25 @@ import moment from "moment"
 
 import { Article, Author, Summary, Hashtags } from "./styles"
 
-import { Event } from "../Posts"
+type Commit = {
+    message: string;
+}
+
+export type Event = {
+    id: string;
+    type: string;
+    actor: {
+        login: string;
+        avatar_url: string;
+    };
+    repo: {
+        name: string
+    }
+    created_at: string;
+    payload?: {
+        commits?: Commit[]
+    }
+}
 
 type Props = {
     event: Event

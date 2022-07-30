@@ -12,25 +12,7 @@ type Props = {
     links: Links[];
 }
 
-type Commit = {
-    message: string;
-}
-
-export type Event = {
-    id: string;
-    type: string;
-    actor: {
-        login: string;
-        avatar_url: string;
-    };
-    repo: {
-        name: string
-    }
-    created_at: string;
-    payload?: {
-        commits?: Commit[]
-    }
-}
+import { Event } from "../PostCard"
 
 export function Posts(props: Props) {
 
