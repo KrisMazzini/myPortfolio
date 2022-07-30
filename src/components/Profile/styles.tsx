@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+type SkillProps = {
+    experienceTime: string;
+}
+
 export const Main = styled.main`
     display: flex;
     flex-direction: column;
@@ -69,7 +73,7 @@ export const Skill = styled.li`
 
     :hover {
         ::before {
-            content: "${props => props.experienceTime}";
+            content: "${(props:SkillProps) => props.experienceTime}";
             
             width: 86px;
             height: 24px;

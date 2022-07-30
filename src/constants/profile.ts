@@ -4,7 +4,31 @@ import github from "/github.svg"
 import linkedin from "/linkedin.svg"
 import mail from "/mail.svg"
 
-export const socialMedias = [
+type SocialMedia = {
+    link: string;
+    imgSrc: string;
+    imgAlt: string;
+    name: string;
+}
+
+type Skill = {
+    name: string;
+    since: string;
+}
+
+type ProfessionalBackground = {
+    role: string;
+    period: string;
+    company: string;
+}
+
+type Education = {
+    description: string;
+    period: string;
+    institution: string;
+}
+
+export const socialMedias:SocialMedia[] = [
     {
         link: "https://www.google.com.br/maps/place/Brasil/",
         imgSrc: mapPin,
@@ -37,7 +61,7 @@ export const socialMedias = [
     },
 ]
 
-export const skills = [
+export const skills:Skill[] = [
     {
         name: "HTML", 
         since: "2021-06-01",
@@ -62,7 +86,6 @@ export const skills = [
         name: "GitHub",
         since: "2021-11-01",
     },
-    ,
     {
         name: "MySQL", 
         since: "2021-07-01",
@@ -85,7 +108,7 @@ export const skills = [
     },
 ]
 
-export const professionalBackground = [
+export const professionalBackground:ProfessionalBackground[] = [
     {
         role: "Software Engineer",
         period: "July 2022 - Currently",
@@ -103,7 +126,7 @@ export const professionalBackground = [
     },
 ]
 
-export const education = [
+export const education:Education[] = [
     {
         description: "Bachelor in Electrical Engineering",
         period: "2016 - Currently",

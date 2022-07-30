@@ -6,7 +6,7 @@ import { ProfileCard } from "../ProfileCard"
 import { socialMedias, skills, professionalBackground, education } from "../../constants/profile"
 
 export function Profile() {
-    function getExperienceTime(since) {
+    function getExperienceTime(since:string):string {
         const startDate = moment(since, "YYYY-MM-DD")
         const now = moment()
 
