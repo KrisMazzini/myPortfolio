@@ -14,6 +14,8 @@
 
 html * {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     font: 500 18px/22px 'Darker Grotesque', sans-serif;
     color: var(--text-color);
     text-decoration: none;
