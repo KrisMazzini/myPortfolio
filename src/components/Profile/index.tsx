@@ -2,6 +2,7 @@ import moment from "moment"
 
 import { Main, SocialMedias, Skills, Skill, Background } from "./styles"
 import { ProfileCard } from "../ProfileCard"
+import { CV } from "../CV"
 
 import { socialMedias, skills, professionalBackground, education } from "../../constants/profile"
 
@@ -22,6 +23,7 @@ export function Profile() {
     return (
         <Main>
             <ProfileCard />
+            <CV />
             <section>
                 <SocialMedias>
                     {
