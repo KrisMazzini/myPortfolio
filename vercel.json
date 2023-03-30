@@ -6,11 +6,11 @@
         },
         {
             "src": "/projects",
-            "destination": "/"
+            "destination": "/projects"
         },
         {
             "src": "/posts",
-            "destination": "/"
+            "destination": "/posts"
         }
     ]
 }
